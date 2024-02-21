@@ -124,6 +124,29 @@ namespace ATM_Sim
                 if (long.TryParse(Console.ReadLine(), out userIDNumber) && userIDNumber >= 0 && userIDNumber <= 99999999999)
                 {
                     validUserID = true;
+                    //თუ ფაილი არსებობს შეცდომა დაფიქსირდება და გვკითხავს ოპერაციის განმეორა გვსურს თუ არა.
+                    string fileName1 = filePath + "\\User" + userIDNumber.ToString() + ".txt";
+                    if (File.Exists(fileName1))
+                    {
+                        Console.WriteLine("User already exists.");
+                        Console.WriteLine("Add another User? (Y/N)");
+                        string repeatResponse;
+                        do
+                        {
+                            repeatResponse = Console.ReadLine().ToUpper();
+                            if (repeatResponse == "N")
+                            {
+                                Console.Clear();
+                                MainMenu();
+                                return;
+                            }
+                            else if (repeatResponse != "Y")
+                            {
+                                Console.WriteLine("Invalid input. Please enter 'Y' or 'N'.");
+                            }
+                        } while (repeatResponse != "Y");
+                        AddUser();
+                    }
                 }
                 else
                 {
@@ -146,28 +169,6 @@ namespace ATM_Sim
                     writer.WriteLine("EUR: 0");
                 }
                 Console.WriteLine("User added successfully.");
-                Console.WriteLine("Add another User? (Y/N)");
-                string repeatResponse;
-                do
-                {
-                    repeatResponse = Console.ReadLine().ToUpper();
-                    if (repeatResponse == "N")
-                    {
-                        Console.Clear();
-                        MainMenu();
-                        return;
-                    }
-                    else if (repeatResponse != "Y")
-                    {
-                        Console.WriteLine("Invalid input. Please enter 'Y' or 'N'.");
-                    }
-                } while (repeatResponse != "Y");
-                AddUser();
-            }
-            //და თუ ფაილი არსებობს შეცდომა დაფიქსირდება და გვკითხავს ოპერაციის განმეორა გვსურს თუ არა.
-            else
-            {
-                Console.WriteLine("User already exists.");
                 Console.WriteLine("Add another User? (Y/N)");
                 string repeatResponse;
                 do
