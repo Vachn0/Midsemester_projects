@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberGame", "..\Numbergame\NumberGame\NumberGame.csproj", "{46AD7DB8-87F6-49FC-B51E-873C6B1E7C62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATM_Sim", "..\ATMsimulation\ATM_Sim\ATM_Sim.csproj", "{D546BAC7-4F64-4FB0-BD48-992A6CC57C38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentSystem", "..\StudentSystem\StudentSystem.csproj", "{32F976EF-4AC7-43AB-8243-C561E7735AD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46AD7DB8-87F6-49FC-B51E-873C6B1E7C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46AD7DB8-87F6-49FC-B51E-873C6B1E7C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46AD7DB8-87F6-49FC-B51E-873C6B1E7C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46AD7DB8-87F6-49FC-B51E-873C6B1E7C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D546BAC7-4F64-4FB0-BD48-992A6CC57C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D546BAC7-4F64-4FB0-BD48-992A6CC57C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D546BAC7-4F64-4FB0-BD48-992A6CC57C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D546BAC7-4F64-4FB0-BD48-992A6CC57C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32F976EF-4AC7-43AB-8243-C561E7735AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32F976EF-4AC7-43AB-8243-C561E7735AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32F976EF-4AC7-43AB-8243-C561E7735AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32F976EF-4AC7-43AB-8243-C561E7735AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB3C3EFF-02D3-4779-9218-2D103DAB7E18}
+	EndGlobalSection
+EndGlobal
