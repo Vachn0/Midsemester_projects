@@ -1,0 +1,4 @@
+Name: TestUser #1
+GEL: 1000
+USD: 200
+EUR: 500

@@ -9,7 +9,7 @@ namespace ATM_Sim
 {
     internal class AtmFunctions
     {
-        private static string filePath = "D:\\IT_STEP\\FinalProjects\\Midsemester_projects\\bin\\Users";
+        private static string filePath = "D:\\IT_STEP\\FinalProjects\\Atm_Users";
 
         public static void MainMenu()
         {
